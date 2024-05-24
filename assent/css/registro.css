@@ -1,0 +1,170 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: "Arial", sans-serif;
+    line-height: normal;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(228, 1, 20); /* Fondo rojo */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    position: relative;
+    width: 100%;
+    background: #fff; /* Fondo blanco */
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Estilos para el formulario */
+.form {
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para los campos de entrada de texto en el formulario */
+.form input[type="text"] {
+    width: 100%; /* Ancho completo */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para los campos de entrada de texto */
+.input-box, .select-box {
+    position: relative;
+    height: auto;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #7e7e70;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+/* Estilos para los campos de entrada de texto cuando están enfocados */
+.input-box input:focus, .select-box:focus {
+    box-shadow: 0 0 10px rgba(9, 9, 9, 0.1);
+}
+
+/* Estilos para los contenedores de columna */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor de género */
+.gender-box {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos para los elementos dentro del contenedor de género */
+.gender-box label {
+    display: inline-block;
+    align-items: center;
+    color: #999;
+    font-size: 16px;
+}
+
+/* Estilos para los elementos de género */
+.gender-box input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilos para los elementos de párrafo */
+p {
+    color: #333; /* Color del texto para los elementos de párrafo */
+    margin: 5px; /* Margen de 5px alrededor de los elementos de párrafo */
+}
+
+/* Estilos para los input de tipo "number" */
+.number {
+    column-gap: 5px; /* Espacio entre columnas de 5px para los input de tipo "number" */
+}
+
+/* Estilos para los input de tipo "checkbox" */
+.checkbox input[type="checkbox"] {
+    color: rgb(34, 222, 134); /* Color del texto para los input de tipo "checkbox" */
+}
+
+/* Estilos para los enlaces */
+a:hover,
+a:active {
+    cursor: pointer; /* Cambia el cursor a pointer al pasar sobre los enlaces */
+    color: #797979; /* Cambia el color del texto de los enlaces al pasar sobre ellos o cuando están activos */
+}
+
+/* Estilos para las direcciones */
+.address {
+    margin-top: 15px; /* Margen superior de 15px para los elementos con la clase "address" */
+}
+
+/* Estilos para los contenedores de tipo "split" */
+.split-box {
+    width: 100%; /* Ancho completo para los contenedores de tipo "split" */
+    color: #979797; /* Color de texto gris para los contenedores de tipo "split" */
+    font-size: 14px; /* Tamaño de fuente de 14px para los contenedores de tipo "split" */
+}
+
+/* Estilos para los botones de tipo "submit" */
+.submit-button {
+    height: 55px; /* Altura de 55px para los botones de tipo "submit" */
+    width: 100px; /* Ancho de 100px para los botones de tipo "submit" */
+    color: #fff; /* Color de texto blanco para los botones de tipo "submit" */
+    font-size: 14px; /* Tamaño de fuente de 14px para los botones de tipo "submit" */
+    font-weight: 700; /* Peso de fuente bold para los botones de tipo "submit" */
+    margin-top: 10px; /* Margen superior de 10px para los botones de tipo "submit" */
+    border: none; /* Sin borde para los botones de tipo "submit" */
+    cursor: pointer; /* Cambia el cursor a pointer para los botones de tipo "submit" */
+    transition: all 0.25s ease; /* Transición suave de todas las propiedades durante 0.25 segundos */
+    background: rgb(237, 15, 13); /* Fondo rojo para los botones de tipo "submit" */
+}
+
+/* Estilos para los botones de tipo "reset" */
+.reset-button {
+    background: rgb(13, 13, 3); /* Fondo oscuro para los botones de tipo "reset" */
+}
+
+/* Estilos para elementos de texto en negrita */
+.alert {
+    color: #82f; /* Cambia el color del texto a un tono de azul */
+    font-size: 10px; /* Establece el tamaño de fuente a 10px */
+    font-weight: bold; /* Hace que el texto esté en negrita */
+}
+
+/* Estilos para botones */
+button {
+    height: 55px; /* Establece la altura del botón en 55 píxeles */
+    color: #fff; /* Cambia el color del texto a blanco */
+    font-size: inherit; /* Utiliza el tamaño de fuente heredado */
+    font-weight: 400; /* Establece el peso de la fuente a 400 */
+    margin-top: 3px; /* Añade un margen superior de 3 píxeles */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    transition: all 0.25s ease; /* Aplica una transición suave a todas las propiedades durante 0.25 segundos */
+    background: rgb(237, 16, 16); /* Establece el color de fondo del botón */
+}
+
+/* Estilos para el efecto hover de los botones */
+button:hover {
+    background: rgb(81, 13, 9); /* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
+}
+
+/* Estilos para columnas */
+@media screen and (min-width: 800px) {
+    .form .column {
+        flex-wrap: wrap; /* Permite que los elementos de la columna se envuelvan */
+        font-family: 'Segoe UI', 'Segoe UI Emoji', sans-serif; /* Define una familia de fuentes para la columna */
+    }
+}

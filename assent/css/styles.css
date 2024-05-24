@@ -1,0 +1,159 @@
+/* Main */
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/slider1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.fondo--registro{
+    background-image: url('../img/slide2.jpg');
+}
+
+.capa-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Corrección: espacios no deben estar en rgba() */
+}
+
+.contenedor {
+    height: 100vh;
+    width: min(90%, 120rem); /* Esta propiedad no es compatible con CSS, puede que quisieras usar max-width */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    background-color: rgba(173, 171, 201, 0.1); /* Corregido: no hay espacio entre rgba y el primer paréntesis */
+    padding: 2rem 10rem;
+    border-radius: 2rem; /* Corregido: no hay espacio en border-radius */
+}
+
+/* Estilos para el formulario */
+.formulario {
+    display: grid;
+    grid-template-rows: repeat(3, auto); /* Las filas tienen altura automática */
+    grid-template-columns: 1fr 3fr; /* Columnas en proporción 1:3 */
+    gap: 20px; /* Espacio entre las celdas */
+    grid-template-areas:
+        'label1 field1'
+        'label2 field2'
+        'blanco boton'; /* Definición de áreas del grid */
+}
+
+/* Estilos para los campos de entrada */
+.campo1, .campo2, .campo3, .campo4 {
+    display: flex;
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+}
+
+/* Estilos para las etiquetas de los campos */
+.campo_label {
+    margin-bottom: 5px; /* Espacio inferior */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada */
+.campo_field {
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+::-webkit-input-placeholder {
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+
+/* Estilos para el botón */
+.boton {
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/* Estilos para el botón principal */
+.boton--prinario {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para el botón secundario */
+.boton--secundario {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    color: #007bff; /* Color de texto azul */
+}
+
+/* Registro */
+.fondo--registro {
+    background-image: url('../img/slide3.jpg'); /* Corregido: eliminé el espacio extra en la URL de la imagen */
+    background-size: cover; /* La imagen se ajusta al tamaño del contenedor */
+    background-position: center; /* La imagen se centra */
+    height: 100vh; /* Toma toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario--registro {
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* Las filas tienen altura automática */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem; /* Espacio interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.registro-field {
+    border: none;
+    border-bottom: .2rem solid var(--blanco);
+    padding: 1rem;
+    color: var(--blanco);
+    background-color: transparent;
+    width: 90%;
+}
+
+.campoIzq, .campoDer {
+    display: flex;
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los botones */
+.boton {
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para el botón principal */
+.boton--prinario {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para el botón secundario */
+.boton--secundario {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    color: #007bff; /* Color de texto azul */
+}
